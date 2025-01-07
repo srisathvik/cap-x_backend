@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: stock-portfolio-tracker
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/portfolio-tracker
+    username: root
+    password: Root
+
+  jpa:
+    #    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8087
+
+
+
+  error:
+    include-stacktrace:never
